@@ -17,9 +17,10 @@ While the Power BI version was focused on answering business questions, this Tab
 ## 💡 Objectives  
 
 Unlike the Power BI dashboard, which had explicit business-analysis goals, this Tableau project has slightly different objectives:  
-- Showcase the use of **Tableau Prep Builder** for ETL workflows  
-- Compare Tableau and Power BI dashboards by replicating the homepage dashboard in Tableau  
-- Explore Tableau features such as navigation buttons, interactive filters, and cross-dashboard linking  
+- **Explore Tableau Prep Builder** and demonstrate its use for ETL workflows  
+- **Build an interactive Tableau dashboard**:
+  - Replicating the Power BI homepage dashboard to enable direct comparison between the two tools  
+  - Highlight features such as navigation buttons, interactive filters, and cross-dashboard linking  
 
 ## 🛠️ Data Preparation with Tableau Prep Builder  
 
