@@ -27,7 +27,7 @@ Unlike the Power BI dashboard, which had explicit business-analysis goals, this 
 To explore Tableau Prep Builder, I used raw CSVs in this project instead of a PostgreSQL database or Azure SQL Database. Tableau Prep Builder was used to design a **data flow** to prepare a dataset with a star schema suitable for data analytics:  
 
 - Removed duplicates, standardized column names, and corrected data types (dates, numeric fields).  
-- Joined cities and countries tables to customers and employees. Also joined categories to products. This resulted in three dimension tables and a fact table.  
+- Joined `cities` and `countries` tables to `customers` and `employees`. Also joined `categories` to `products`. This resulted in three dimension tables and a fact table.  
 - Created calculated fields such as full employee names.  
 - Saved clean, analysis-ready data outputs (e.g., `.hyper` or `.csv`) in a specified directory, which were then imported into Tableau for analysis.  
 
@@ -47,7 +47,7 @@ To explore Tableau Prep Builder, I used raw CSVs in this project instead of a Po
 ## 📈 Data Analytics with Tableau  
 
 ### 📥 Data Import  
-A connection was created to the cleaned files generated in Tableau Prep. In the **Data Source** tab, the fact table was dragged onto the canvas first, followed by the dimension tables. Primary and foreign keys were then checked to ensure proper relationships, with many-to-one links defined between the sales fact table and the dimensions. Note that all tables and their connections were defined in the **logical layer** of Tableau.
+A connection was created to the cleaned files generated in Tableau Prep Builder. In the **Data Source** tab, the fact table was dragged onto the canvas first, followed by the dimension tables. Primary and foreign keys were then checked to ensure proper relationships, with many-to-one links defined between the sales fact table and the dimensions. Note that all tables and their connections were defined in the **logical layer** of Tableau.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b4110d27-5ead-452c-ac85-fe37d380f9d7" width="600">
@@ -68,7 +68,7 @@ A consistent color theme was applied to ensure visual harmony. Two dashboards ar
 ![Recording 2025-09-15 233411](https://github.com/user-attachments/assets/0be0cc18-3740-4759-b457-cd6b6d2bc930)  
 
 - **Employee Dashboard** includes:  
-  - Scatter plots of employee experience vs. revenue and employee age vs. revenue, with a median revenue line. These plots show little variability in revenue between employees, suggesting that neither age nor experience is a strong factor in sales performance.  
+  - Scatter plots of employee experience vs. revenue and employee age vs. revenue, with a **reference line** showing the median of "total revenue generated per employee". These plots show little variability in revenue between employees, suggesting that neither age nor experience is a strong factor in sales performance.  
   - Top 5 Employees Table showing best-performing employees ranked by revenue.  
   - Gender distribution pie chart showing that most employees are male.  
 
@@ -76,7 +76,8 @@ A consistent color theme was applied to ensure visual harmony. Two dashboards ar
   <img src="https://github.com/user-attachments/assets/505a28cb-9c25-4ebb-a6d7-a261fdce260d" width="700" > 
 </p>
 
-**Navigation Note:** A button is placed on the top-right corner to switch between the Home and Employee dashboards. Custom icons and tooltip text were added to make navigation more user-friendly.  
+**Navigation Note:**
+A **button** is placed on the top-right corner to switch between the Home and Employee dashboards. Custom icons and **tooltip** text were added to make navigation more user-friendly.  
 
 <br>
 <p align="center"><em>Example of dashboard navigation</em></p>
@@ -93,13 +94,13 @@ A consistent color theme was applied to ensure visual harmony. Two dashboards ar
   - Revenue distribution among employees is relatively even.  
   - Male employees make up the majority of the workforce.  
 
-### ⚖️ Tableau vs. Power BI Comparison 
+### 🔍 Tableau vs. Power BI Comparison 
 
 This project provided an opportunity to reflect on the strengths and trade-offs of Tableau compared to Power BI.  
 
 - **Data Preparation**:  
   - In Power BI, **Power Query Editor** is embedded and automatically loads cleaned data into the model.  
-  - In **Tableau Prep Builder**, cleaned outputs must be saved separately (e.g., as CSV or `.hyper`) and then imported into a Tableau workbook. This adds extra steps and storage needs, but Tableau Prep Builder provides a visually intuitive flow-based interface that feels similar to Azure Data Factory.  
+  - In **Tableau Prep Builder**, cleaned outputs must be saved separately (e.g., as `.csv` or `.hyper`) and then imported into a Tableau workbook. This adds extra steps and requires additional storage. However, Tableau Prep Builder offers a visually intuitive, flow-based interface for ETL processes, similar to dataflows in Azure Data Factory, making data cleaning and preparation more transparent and easier to follow.
 
 - **Data Modeling**:  
   - Tableau supports both **logical** and **physical** layers. This allows flexible handling of datasets that don’t follow strict schemas.  
