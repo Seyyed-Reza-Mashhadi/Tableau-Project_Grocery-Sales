@@ -46,9 +46,7 @@ To explore Tableau Prep Builder, I used raw CSVs in this project instead of a Po
 ## 📈 Data Analytics with Tableau  
 
 ### 📥 Data Import  
-A connection was created to the cleaned files generated in Tableau Prep. In the **Data Source** tab, the fact table was dragged onto the canvas first, followed by the dimension tables. Primary and foreign keys were then checked to ensure proper relationships, with many-to-one links defined between the sales fact table and the dimensions.  
-
-- **Note:** All tables and their connections were defined in the **logical layer** of Tableau.
+A connection was created to the cleaned files generated in Tableau Prep. In the **Data Source** tab, the fact table was dragged onto the canvas first, followed by the dimension tables. Primary and foreign keys were then checked to ensure proper relationships, with many-to-one links defined between the sales fact table and the dimensions. Note that all tables and their connections were defined in the **logical layer** of Tableau.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b4110d27-5ead-452c-ac85-fe37d380f9d7" width="600">
