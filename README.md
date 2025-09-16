@@ -54,7 +54,7 @@ A connection was created to the cleaned files generated in Tableau Prep. In the 
 
 ### 🎨 Dashboard Design  
 
-A consistent **green color theme** (dark green, light green, etc.) was applied to ensure visual harmony.  
+A consistent color theme was applied to ensure visual harmony. Two dashboards are designed in this project as follows:
 
 - **Home Dashboard** replicates the Power BI homepage to enable direct comparison between the two tools. This page confirms consistency of values across tools and shows Tableau’s ability to recreate the same analytical story. Key elements include:  
   - KPIs: Total revenue, number of transactions, number of items sold, Average Order Value (AOV), and Average Basket Size.  
