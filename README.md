@@ -103,7 +103,7 @@ This project provided an opportunity to reflect on the strengths and trade-offs 
   - In **Tableau Prep Builder**, cleaned outputs must be saved separately (e.g., as CSV or `.hyper`) and then imported into a Tableau workbook. This adds extra steps and storage needs, but Tableau Prep Builder provides a visually intuitive flow-based interface that feels similar to Azure Data Factory.  
 
 - **Data Modeling**:  
-  - Tableau supports both **logical** and **physical** layers. This allows flexible handling of datasets that don’t follow strict schemas (e.g., multiple fact tables or many-to-many joins).  
+  - Tableau supports both **logical** and **physical** layers. This allows flexible handling of datasets that don’t follow strict schemas.  
   - Power BI enforces stricter star/snowflake schema relationships, which ensures data integrity but offers less flexibility in unusual data models.  
 
 - **Dashboard Design & Visualization Flexibility**:  
