@@ -128,7 +128,7 @@ This project provided an opportunity to reflect on the strengths and trade-offs 
 
 ## 🔁 Related Projects  
 
-- 📊 [**Power BI Project**](https://github.com/Seyyed-Reza-Mashhadi/PowerBI-Project_Grocery-Sales): Full analytical exploration of the same dataset with detailed insights.  
+- 📊 [**Power BI Project**](https://github.com/Seyyed-Reza-Mashhadi/Power-BI-Project_Grocery-Sales): Full analytical exploration of the same dataset with detailed insights.  
 - 🗄️ [**SQL Project**](https://github.com/Seyyed-Reza-Mashhadi/SQL-Project_Grocery-Sales): PostgreSQL database design and analytical SQL queries forming the data backbone of the Power BI dashboard.
 - ☁️ [**Azure Data Factory Project**](https://github.com/Seyyed-Reza-Mashhadi/Azure-Data-Factory-Project): Implements a complete ETL pipeline for data orchestration using Azure Data Factory, ADLS, and Azure SQL Database.  
 
