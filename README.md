@@ -1,4 +1,4 @@
-<h1 align="center">Grocery Sales Dashboard in Tableau</h1>  
+<h1 align="center"> Grocery Sales Dashboard in Tableau </h1>  
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7d19a203-e2f7-4a63-a6bd-526a867b633e">
